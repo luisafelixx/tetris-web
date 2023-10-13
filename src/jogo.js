@@ -196,7 +196,7 @@ class Game {
     static VerificaPreenchimentoLinhaEAtualizaDados() {
         let linhasDeletadas = Game.grid.verificaLinhasCompletas();
         
-        if (linhasDeletadas < 1) { return; }
+        if (linhasDeletadas.length < 1) { return; }
         
         
         Game.linhas += linhasDeletadas;
